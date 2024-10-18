@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+header.header {
+    padding: 0 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    padding: 15px 0;
+}
+
+.navbar .logo img {
+    height: 44px;
+    width: auto;
+    object-fit: cover;
+}
+
+.navbar .nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 24px;
+}
+
+.navbar .nav-items .nav-item {
+    display: inline-block;
+}
+
+.navbar .nav-items .nav-item .nav-link {
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    border-radius: 4px;
+    transition: .25s ease-in-out;
+}
+
+.navbar .nav-items .nav-item .nav-link:hover {
+    background-color: #6a86ed;
+    color: #fff;
+}
+
+.navbar .nav-items .nav-item .nav-link.active {
+    background-color: #6a86ed;
+    color: #fff;
+}
+
+.slider {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.info-section {
+    padding-bottom: 24px;
+}
+
+.info-section .info-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    text-align: center;
+}
+
+.info-section .info-wrapper .card-info {
+    background-color: #6a86ed;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 24px 0;
+}
+
+.info-section .info-wrapper .card-info .card-info-icon {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #213c9f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-section .info-wrapper .card-info .card-info-icon i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.info-section .card-info .card-info-content .card-info-number {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.info-section .card-info .card-info-content .card-info-title {
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+}
